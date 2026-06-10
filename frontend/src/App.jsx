@@ -2,6 +2,7 @@ import { useState } from 'react'
 import FileUploader from './components/FileUploader'
 import PreviewGrid from './components/PreviewGrid'
 import ConversionResult from './components/ConversionResult'
+import logo from './assets/logo.png'
 
 function App() {
   const [mode, setMode] = useState('pdf-to-word') // 'pdf-to-word' or 'word-to-pdf'
@@ -16,7 +17,10 @@ function App() {
   return (
     <div className="app-container">
       <header>
-        <h1>Bray's PDF</h1>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '1rem', marginBottom: '0.5rem' }}>
+          <img src={logo} alt="Logo" style={{ height: '48px', objectFit: 'contain' }} />
+          <h1 style={{ margin: 0 }}>Bray's PDF</h1>
+        </div>
         <p className="subtitle">Premium Document Conversion</p>
       </header>
       
