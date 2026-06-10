@@ -11,6 +11,8 @@ RUN apt-get update && apt-get install -y \
     libreoffice-core \
     libreoffice-common \
     fonts-liberation \
+    libgl1 \
+    libglib2.0-0 \
     --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
